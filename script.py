@@ -1,14 +1,15 @@
 import pandas as pd
+import json
 
-def gerar_blocos_aulas(nome_arquivo):
-    xls = pd.ExcelFile(nome_arquivo)
+def gerarBlocosAulas(nomeArquivo):
+    xls = pd.ExcelFile(nomeArquivo)
     df = xls.parse('Disciplinas oferta 2024.1')
 
     df = df.rename(columns={
         'COD. DISCIPLINA': 'codigo_disciplina',
         'DISCIPLINA': 'nome_disciplina',
         'CH': 'ch',
-        df.columns[6]: 'professor',  
+        df.columns[6]: 'professor',
         'PERIODO': 'periodo',
         'TURMA': 'turma',
         'AMBIENTE (Relacionar os ambientes específicos)': 'ambiente'
@@ -16,34 +17,33 @@ def gerar_blocos_aulas(nome_arquivo):
 
     df = df.dropna(subset=['codigo_disciplina', 'nome_disciplina', 'professor'])
 
-    blocos_necessarios_por_oferta = []
+    blocosNecessariosPorOferta = []
 
-    for _, row in df.iterrows():
+    for i, row in df.iterrows():
         ch = row['ch']
-        blocos = int(round(ch / 20))  
+        blocos = int(round(ch / 20))
         if blocos == 0:
             continue
 
         oferta = {
             'disciplina': row['codigo_disciplina'],
-            'nome_disciplina': row['nome_disciplina'],
+            'nomeDisciplina': row['nome_disciplina'],
             'professor': row['professor'],
             'turma': str(row['turma']).split(" ")[0],
             'periodo': row['periodo'],
             'ambiente': row['ambiente'],
-            'blocos_necessarios': blocos,
-            'alocacao': []  
+            'blocosNecessarios': blocos,
+            'alocacao': []
         }
 
-        blocos_necessarios_por_oferta.append(oferta)
+        blocosNecessariosPorOferta.append(oferta)
 
-    return blocos_necessarios_por_oferta
+    return blocosNecessariosPorOferta
 
 
 if __name__ == "__main__":
     arquivo = "PLANEJAMENTO_2024_1_FGGCOMP.xlsx"
-    blocos = gerar_blocos_aulas(arquivo)
+    blocos = gerarBlocosAulas(arquivo)
 
-    print("Exemplo de blocos gerados:")
-    for item in blocos[:3]:
-        print(item)
+    with open("blocos_aula.json", "w", encoding="utf-8") as f:
+        json.dump(blocos, f, indent=2, ensure_ascii=False)

@@ -1,0 +1,312 @@
+[
+  {
+    "disciplina": "FGGCOMP.101",
+    "nomeDisciplina": "Algoritmos I",
+    "professor": "Manoel Pereria Junior",
+    "turma": "2024-01-01",
+    "periodo": 1.0,
+    "ambiente": "Laboratório de Informática 04",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.004",
+    "nomeDisciplina": "Cálculo I",
+    "professor": "Karina Pereira Carvalho",
+    "turma": "2024-01-01",
+    "periodo": 1.0,
+    "ambiente": "Sala de Aula",
+    "blocosNecessarios": 4,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.118",
+    "nomeDisciplina": "Computação e Sociedade",
+    "professor": "Manuela de Carvalho Rodrigues",
+    "turma": "2024-01-01",
+    "periodo": 1.0,
+    "ambiente": "Sala de Aula",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.016",
+    "nomeDisciplina": "Eletrônica Digital",
+    "professor": "Roger Santos Ferreira",
+    "turma": "2024-01-01",
+    "periodo": 1.0,
+    "ambiente": "Sala e Laboratório de Arquitetura de Redes",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.005",
+    "nomeDisciplina": "Lógica para Ciência da Computação",
+    "professor": "Walace de Almeida Rodrigues",
+    "turma": "2024-01-01",
+    "periodo": 1.0,
+    "ambiente": "Sala de Aula",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.017",
+    "nomeDisciplina": "Arquitetura e Organização de Computadores",
+    "professor": "Roger Santos Ferreira",
+    "turma": "2023-01-01",
+    "periodo": 3.0,
+    "ambiente": "Sala e Laboratório de Arquitetura de Redes",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.120",
+    "nomeDisciplina": "Estruturas de Dados I",
+    "professor": "Denise Ferreira Garcia Rezende",
+    "turma": "2023-01-01",
+    "periodo": 3.0,
+    "ambiente": "Sala e Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.123",
+    "nomeDisciplina": "Extensão em Ciência da Computação I",
+    "professor": "Denise Ferreira Garcia Rezende",
+    "turma": "2023-01-01",
+    "periodo": 3.0,
+    "ambiente": "Sala 11 (Lab. Robótica e Empresa Simulada)",
+    "blocosNecessarios": 4,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.097",
+    "nomeDisciplina": "Matemática Computacional",
+    "professor": "Carlos Bernardes Rosa Junior",
+    "turma": "2023-01-01",
+    "periodo": 3.0,
+    "ambiente": "Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.098",
+    "nomeDisciplina": "Sistemas Operacionais I",
+    "professor": "Everthon Valadão dos Santos",
+    "turma": "2023-01-01",
+    "periodo": 3.0,
+    "ambiente": "Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.121",
+    "nomeDisciplina": "Engenharia de Software",
+    "professor": "Lindamara Silva Ferreira Santos",
+    "turma": "2022-01-01",
+    "periodo": 5.0,
+    "ambiente": "Sala de Aula",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.117",
+    "nomeDisciplina": "Introdução ao TCC",
+    "professor": "Carlos Bernardes Rosa Junior",
+    "turma": "2022-01-01",
+    "periodo": 5.0,
+    "ambiente": "Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.100",
+    "nomeDisciplina": "Laboratório de Sistemas Digitais",
+    "professor": "Walace de Almeida Rodrigues",
+    "turma": "2022-01-01",
+    "periodo": 5.0,
+    "ambiente": "Sala e Laboratório de Arquitetura de Redes",
+    "blocosNecessarios": 2,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.113",
+    "nomeDisciplina": "Redes de Computadores I ",
+    "professor": "Everthon Valadão dos Santos",
+    "turma": "2022-01-01",
+    "periodo": 5.0,
+    "ambiente": "Laboratório de Arquitetura de Redes",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.032",
+    "nomeDisciplina": "Teoria da Computação",
+    "professor": "Glaucia Maria de Carvalho Cota",
+    "turma": "2022-01-01",
+    "periodo": 5.0,
+    "ambiente": "Sala e Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.021",
+    "nomeDisciplina": "Paradigmas de Linguagens",
+    "professor": "Walace de Almeida Rodrigues",
+    "turma": "2021-01-01",
+    "periodo": 7.0,
+    "ambiente": "Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.031",
+    "nomeDisciplina": "Inteligência Artificial",
+    "professor": "Alexandre Pimenta",
+    "turma": "2021-01-01",
+    "periodo": 7.0,
+    "ambiente": "Sala e Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.018",
+    "nomeDisciplina": "Filosofia e Ëtica",
+    "professor": "Francisco Renato Tavares",
+    "turma": "2021-01-01",
+    "periodo": 7.0,
+    "ambiente": "Sala de Aula",
+    "blocosNecessarios": 2,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.043",
+    "nomeDisciplina": "FGGCOMP.043 - Ciptografia e Segurança de Sistemas - 60",
+    "professor": "Danielle Costa de Oliveira",
+    "turma": "OPTATIVA",
+    "periodo": NaN,
+    "ambiente": "Sala e Laboratório de Arquitetura de Redes",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.029",
+    "nomeDisciplina": "FGGCOMP.029 - Banco de Dados II - 60",
+    "professor": "Fernando Paim Lima",
+    "turma": "OPTATIVA",
+    "periodo": NaN,
+    "ambiente": "Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.076",
+    "nomeDisciplina": "FGGCOMP.076 - Modelagem e Projeto de Algoritmos para Mercado Financeiro - 60",
+    "professor": "Alexandre Pimenta",
+    "turma": "OPTATIVA",
+    "periodo": NaN,
+    "ambiente": "Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.074",
+    "nomeDisciplina": "FGGCOMP.074 - Internet das Coisas - 60",
+    "professor": "Danielle Costa de Oliveira",
+    "turma": "OPTATIVA",
+    "periodo": NaN,
+    "ambiente": "Laboratório de Arquitetura de Redes",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.047",
+    "nomeDisciplina": "FGGCOMP.047 - Gestão de Projetos - 30",
+    "professor": "Lindamara Silva Ferreira Santos",
+    "turma": "OPTATIVA",
+    "periodo": NaN,
+    "ambiente": "Sala e Laboratório de Informática",
+    "blocosNecessarios": 2,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.056",
+    "nomeDisciplina": "FGGCOMP.056 - Computação Gráfica para Jogos - 60",
+    "professor": "Fernando Paim Lima",
+    "turma": "OPTATIVA",
+    "periodo": NaN,
+    "ambiente": "Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.095",
+    "nomeDisciplina": "FGGCOMP.095 - Estrutura de Dados II",
+    "professor": "Mário Luiz Rodrigues Oliveira",
+    "turma": "TURMA",
+    "periodo": NaN,
+    "ambiente": "Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.089",
+    "nomeDisciplina": "FGGCOMP.089 - Compiladores I",
+    "professor": "Walace de Almeida Rodrigues",
+    "turma": "TURMA",
+    "periodo": NaN,
+    "ambiente": "Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.026",
+    "nomeDisciplina": "FGGCOMP.026 - Linguagens Formais e Autômatos",
+    "professor": "Glaucia Maria de Carvalho Cota",
+    "turma": "TURMA",
+    "periodo": NaN,
+    "ambiente": "Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.033",
+    "nomeDisciplina": "FGGCOMP.033 - Projeto e Análise de Algoritmos",
+    "professor": "Mário Luiz Rodrigues Oliveira",
+    "turma": "TURMA",
+    "periodo": NaN,
+    "ambiente": "Laboratório de Informática",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.008",
+    "nomeDisciplina": "FGGCOMP.008 - Cálculo II",
+    "professor": "Rafael Honório Pereira Alves",
+    "turma": "TURMA",
+    "periodo": NaN,
+    "ambiente": "Sala de Aula",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.015",
+    "nomeDisciplina": "FGGCOMP.015 - Probabilidade e Estatística",
+    "professor": "Rafael Honório Pereira Alves",
+    "turma": "TURMA",
+    "periodo": NaN,
+    "ambiente": "Sala de Aula",
+    "blocosNecessarios": 3,
+    "alocacao": []
+  },
+  {
+    "disciplina": "FGGCOMP.042",
+    "nomeDisciplina": "FGGCOMP.042 - Empreendedorismo",
+    "professor": "Robson de Castro Ferreira",
+    "turma": "TURMA",
+    "periodo": NaN,
+    "ambiente": "Sala de Aula",
+    "blocosNecessarios": 2,
+    "alocacao": []
+  }
+]
