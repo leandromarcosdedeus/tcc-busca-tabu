@@ -4,7 +4,7 @@ Este projeto tem como objetivo processar os dados de planejamento de disciplinas
 
 ## Estrutura dos dados de entrada
 
-O sistema lê um arquivo Excel com a aba exemplo:`Disciplinas oferta 2024.1`. A planilha deve conter as seguintes colunas:
+O sistema lê um arquivo Excel com a aba `Disciplinas oferta 2024.1`. A planilha deve conter as seguintes colunas:
 
 - COD. DISCIPLINA
 - DISCIPLINA
@@ -13,49 +13,47 @@ O sistema lê um arquivo Excel com a aba exemplo:`Disciplinas oferta 2024.1`. A 
 - PERIODO
 - TURMA
 - AMBIENTE
-- Restrições
+- RESTRIÇÕES (formato livre ou estruturado como JSON, dependendo do uso)
 
 Exemplo de entrada:
 
-| COD. DISCIPLINA | DISCIPLINA         | CH  | PROFESSOR              | TURMA       | PERIODO | AMBIENTE                    | Restrições
-|------------------|---------------------|------|--------------------------|--------------|----------|-------------------------------|
-| FGGCOMP.004       | Cálculo I             | 90  | Karina Pereira Carvalho | 2024-01-01 | 1        | Sala de Aula                |
+| COD. DISCIPLINA | DISCIPLINA | CH  | PROFESSOR              | TURMA       | PERIODO | AMBIENTE                  | RESTRIÇÕES                                 |
+|------------------|------------|-----|-------------------------|-------------|---------|----------------------------|---------------------------------------------|
+| FGGCOMP.004       | Cálculo I   | 90  | Karina Pereira Carvalho | 2024-01-01 | 1       | Sala de Aula              | Não disponível Segunda 13:30 e Sexta 08:00 |
 
 ---
 
 ## Horários possíveis
 
-A grade de horários é formada por 4 blocos fixos por dia:
+A grade de horários é composta por 4 blocos fixos por dia:
 
-- 08:00–10:00
-- 10:20–12:20
-- 13:30–15:30
+- 08:00–10:00  
+- 10:20–12:20  
+- 13:30–15:30  
 - 15:50–17:50
 
-Os dias da semana considerados são: Segunda, Terça, Quarta, Quinta e Sexta.
-
-Assim, existem 20 blocos de aula possíveis por semana (5 dias × 4 blocos).
+Dias considerados: Segunda a Sexta.  
+Total: **5 dias × 4 blocos = 20 blocos de aula por semana**
 
 ---
 
 ## Lógica de divisão por blocos
 
-Cada disciplina será alocada em blocos de 2h(horários casados). A conversão é feita com base na carga horária total (CH) da disciplina.
+Cada disciplina é alocada em blocos de 2h (blocos casados). A quantidade de blocos é baseada na carga horária (CH):
 
-Exemplo:
-- Uma disciplina de 60h precisa de 2 blocos semanais.
-- Uma de 90h precisa de 3 blocos.
+- Uma disciplina de 60h → 2 blocos
+- Uma disciplina de 90h → 3 blocos
 
-O script `gerar_blocos_aulas.py` calcula isso automaticamente e gera uma estrutura como:
+O script `gerar_blocos_aulas.py` faz esse cálculo automaticamente e gera estruturas como:
 
 ```python
 {
-    'disciplina': 'FGGCOMP.004',
-    'nome_disciplina': 'Cálculo I',
-    'professor': 'Karina Pereira Carvalho',
-    'turma': '2024-01-01',
-    'periodo': 1,
-    'ambiente': 'Sala de Aula',
-    'blocos_necessarios': 2,
-    'alocacao': []  
+    "disciplina": "FGGCOMP.004",
+    "nomeDisciplina": "Cálculo I",
+    "professor": "Karina Pereira Carvalho",
+    "turma": "2024-01-01",
+    "periodo": 1,
+    "ambiente": "Sala de Aula",
+    "blocosNecessarios": 3,
+    "alocacao": []
 }
