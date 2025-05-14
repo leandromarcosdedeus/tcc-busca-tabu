@@ -30,10 +30,11 @@ def gerarBlocosAulas(nomeArquivo):
             'nomeDisciplina': row['nome_disciplina'],
             'professor': row['professor'],
             'turma': str(row['turma']).split(" ")[0],
-            'periodo': row['periodo'],
+            'periodo': str(row['periodo']),
             'ambiente': row['ambiente'],
             'blocosNecessarios': blocos,
-            'alocacao': []
+            'alocacao': [],
+            #'restrições': []
         }
 
         blocosNecessariosPorOferta.append(oferta)
