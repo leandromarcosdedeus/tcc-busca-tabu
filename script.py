@@ -40,7 +40,6 @@ def gerar_blocos_aulas(nome_arquivo):
     return blocos_necessarios_por_oferta
 
 
-# Exemplo de uso
 if __name__ == "__main__":
     arquivo = "PLANEJAMENTO_2024_1_FGGCOMP.xlsx"
     blocos = gerar_blocos_aulas(arquivo)
