@@ -4,7 +4,7 @@ Este projeto tem como objetivo processar os dados de planejamento de disciplinas
 
 ## Estrutura dos dados de entrada
 
-O sistema lê um arquivo Excel com a aba `Disciplinas oferta 2024.1`. A planilha deve conter as seguintes colunas:
+O sistema lê um arquivo Excel com a aba exemplo:`Disciplinas oferta 2024.1`. A planilha deve conter as seguintes colunas:
 
 - COD. DISCIPLINA
 - DISCIPLINA
@@ -13,10 +13,11 @@ O sistema lê um arquivo Excel com a aba `Disciplinas oferta 2024.1`. A planilha
 - PERIODO
 - TURMA
 - AMBIENTE
+- Restrições
 
 Exemplo de entrada:
 
-| COD. DISCIPLINA | DISCIPLINA         | CH  | PROFESSOR              | TURMA       | PERIODO | AMBIENTE                    |
+| COD. DISCIPLINA | DISCIPLINA         | CH  | PROFESSOR              | TURMA       | PERIODO | AMBIENTE                    | Restrições
 |------------------|---------------------|------|--------------------------|--------------|----------|-------------------------------|
 | FGGCOMP.004       | Cálculo I             | 90  | Karina Pereira Carvalho | 2024-01-01 | 1        | Sala de Aula                |
 
@@ -39,11 +40,11 @@ Assim, existem 20 blocos de aula possíveis por semana (5 dias × 4 blocos).
 
 ## Lógica de divisão por blocos
 
-Cada disciplina será alocada em blocos de 2h. A conversão é feita com base na carga horária total (CH) da disciplina.
+Cada disciplina será alocada em blocos de 2h(horários casados). A conversão é feita com base na carga horária total (CH) da disciplina.
 
 Exemplo:
-- Uma disciplina de 60h precisa de 3 blocos semanais.
-- Uma de 90h precisa de 5 blocos.
+- Uma disciplina de 60h precisa de 2 blocos semanais.
+- Uma de 90h precisa de 3 blocos.
 
 O script `gerar_blocos_aulas.py` calcula isso automaticamente e gera uma estrutura como:
 
@@ -55,6 +56,6 @@ O script `gerar_blocos_aulas.py` calcula isso automaticamente e gera uma estrutu
     'turma': '2024-01-01',
     'periodo': 1,
     'ambiente': 'Sala de Aula',
-    'blocos_necessarios': 5,
+    'blocos_necessarios': 2,
     'alocacao': []  
 }
