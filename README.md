@@ -29,7 +29,7 @@ A grade de horários é formada por 4 blocos fixos por dia:
 - 08:00–10:00
 - 10:20–12:20
 - 13:30–15:30
-- 15:50–17:30
+- 15:50–17:50
 
 Os dias da semana considerados são: Segunda, Terça, Quarta, Quinta e Sexta.
 
