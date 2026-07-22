@@ -25,15 +25,17 @@ Exemplo de entrada:
 
 ## Horários possíveis
 
-A grade de horários é composta por 4 blocos fixos por dia:
+A grade de horários é composta por 6 blocos fixos por dia:
 
 - 08:00–10:00  
 - 10:20–12:20  
 - 13:30–15:30  
 - 15:50–17:50
+- 18:30-20:30
+- 20:50-22:50
 
 Dias considerados: Segunda a Sexta.  
-Total: **5 dias × 4 blocos = 20 blocos de aula por semana**
+Total: **5 dias × 6 blocos = 30 blocos de aula por semana**
 
 ---
 
