@@ -21,7 +21,7 @@ def gerarBlocosAulas(nomeArquivo):
 
     for i, row in df.iterrows():
         ch = row['ch']
-        blocos = int(round(ch / 20))
+        blocos = int(round(ch / 30))
         if blocos == 0:
             continue
 
@@ -33,7 +33,7 @@ def gerarBlocosAulas(nomeArquivo):
             'periodo': str(row['periodo']),
             'ambiente': row['ambiente'],
             'blocosNecessarios': blocos,
-            'alocacao': [],
+            #'alocacao': [],
             #'restrições': []
         }
 
