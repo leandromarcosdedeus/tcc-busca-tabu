@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProfessorsTable extends Migration
+class CreateHorariosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,21 @@ class CreateProfessorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('professores', function (Blueprint $table) {
+        Schema::create('horarios', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->string('codigo')->nullable()->unique();
+
+            $table->unsignedTinyInteger('dia_semana');
+
+            $table->time('hora_inicio');
+            $table->time('hora_fim');
+
             $table->timestamps();
+
+            $table->unique([
+                'dia_semana',
+                'hora_inicio',
+                'hora_fim'
+            ]);
         });
     }
 
@@ -28,6 +38,6 @@ class CreateProfessorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('professors');
+        Schema::dropIfExists('horarios');
     }
 }
