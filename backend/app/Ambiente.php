@@ -4,13 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Professor extends Model
+class Ambiente extends Model
 {
-    protected $table = 'professores';
+    protected $table = 'ambientes';
 
     protected $fillable = [
         'nome',
-        'codigo',
+        'capacidade',
+        'tipo',
     ];
 
     public function ofertas()

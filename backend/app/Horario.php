@@ -4,13 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Professor extends Model
+class Horario extends Model
 {
-    protected $table = 'professores';
+    protected $table = 'horarios';
 
     protected $fillable = [
-        'nome',
-        'codigo',
+        'dia_semana',
+        'hora_inicio',
+        'hora_fim',
     ];
 
     public function ofertas()
